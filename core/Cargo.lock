@@ -5512,6 +5512,7 @@ dependencies = [
  "opendal-service-postgresql",
  "opendal-service-s3",
  "opendal-service-sled",
+ "opendal-service-tikv",
  "opendal-service-vercel-blob",
  "opentelemetry",
  "opentelemetry-otlp",
@@ -5611,7 +5612,6 @@ dependencies = [
  "size",
  "sqlx",
  "surrealdb",
- "tikv-client",
  "tokio",
  "tracing-opentelemetry",
  "tracing-subscriber",
@@ -6039,6 +6039,17 @@ dependencies = [
  "opendal-core",
  "serde",
  "sled",
+]
+
+[[package]]
+name = "opendal-service-tikv"
+version = "0.55.0"
+dependencies = [
+ "ctor",
+ "mea",
+ "opendal-core",
+ "serde",
+ "tikv-client",
 ]
 
 [[package]]
